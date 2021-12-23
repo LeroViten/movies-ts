@@ -1,0 +1,40 @@
+@import '../../../styles/shared.scss';
+
+.castThumb {
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 2px solid #b00b6842;
+  margin-top: 20px;
+  box-shadow: $box-shadow;
+}
+
+.castList {
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 16px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    border-radius: 2px;
+    padding: 3px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.actorProfilePic {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: all $transition-duration $transition-function;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 10px 2px rgba(2, 28, 48, 0.486);
+  }
+}

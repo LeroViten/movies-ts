@@ -1,0 +1,20 @@
+@import '../../styles/shared.scss';
+
+.trailerButton {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  opacity: 0.4;
+  border: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: all $transition-duration $transition-function;
+
+  &:hover {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}

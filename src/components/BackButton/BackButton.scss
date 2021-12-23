@@ -1,0 +1,23 @@
+@import '../../styles/shared.scss';
+
+.backButton {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  background-color: #ddf8f669;
+  border: 2px solid #b00b6842;
+  color: black;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: transform $transition-duration $transition-function;
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: $box-shadow;
+  }
+}
+
+body.dark .backButton {
+  background-color: #555a5a69;
+}

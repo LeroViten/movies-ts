@@ -1,0 +1,27 @@
+@import-normalize;
+
+body {
+  font-family: $primary-font-stack;
+  background-color: #e3fffd;
+  background: linear-gradient(to right, #c9f5f2, #fad0f1);
+  color: black;
+  transition: all 250ms linear;
+}
+// body.light {
+//   background: linear-gradient(to right, #c9f5f2, #fad0f1);
+//   color: black;
+// }
+body.dark {
+  background: linear-gradient(to right, #2f3a39, #554752);
+  color: white;
+  transition: all 250ms linear;
+}
+button {
+  cursor: pointer;
+}
+.Toastify__toast--error {
+  border: 1px solid #eb0e0e;
+  font-weight: bold;
+  border-radius: 10px !important;
+  background: rgb(228, 157, 160) !important;
+}

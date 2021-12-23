@@ -1,0 +1,27 @@
+@import '../../../styles/shared.scss';
+
+.reviewsThumb {
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 2px solid #b00b6842;
+  margin-top: 20px;
+  box-shadow: $box-shadow;
+}
+
+.reviewsList__item {
+  margin-bottom: 20px;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.userNameLink {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.reviewContent {
+  margin-top: 10px;
+}

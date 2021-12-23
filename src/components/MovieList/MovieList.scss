@@ -1,0 +1,58 @@
+@import '../../styles/shared.scss';
+
+.movieList {
+  margin-top: -20px;
+  padding-top: 10px;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    flex-wrap: wrap;
+  }
+
+  &__elem {
+    display: flex;
+
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(105, 105, 105, 0.16),
+      0 3px 6px rgba(71, 71, 71, 0.23);
+    transition: all $transition-duration $transition-function;
+    flex-basis: calc(100% / 3 - 30px);
+
+    @media screen and(min-width: 768px) {
+      margin-left: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media screen and(min-width: 1024px) {
+      flex-basis: calc(100% / 4 - 40px);
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: scale(1.04);
+    }
+  }
+}
+
+body.dark .movieList__elem {
+  background-color: rgba(92, 108, 110, 0.267);
+}
+
+.movieCardLink {
+  text-decoration: none;
+  color: #000;
+}
+
+body.dark .movieCardLink {
+  color: rgb(141, 141, 141);
+}
+
+.poster {
+  border-radius: 4px;
+}

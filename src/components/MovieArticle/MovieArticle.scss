@@ -1,0 +1,96 @@
+@import '../../styles/shared.scss';
+
+.movieArticle {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 2px solid #b00b6842;
+  box-shadow: $box-shadow;
+}
+
+.posterThumb {
+  width: 280px;
+  margin-right: 10px;
+}
+
+.poster {
+  border-radius: 5px;
+}
+
+.infoThumb {
+  padding: 0;
+  margin: 0;
+}
+
+body.dark .infoThumb {
+  color: grey;
+}
+
+.movieTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.label,
+.score {
+  margin-bottom: 10px;
+}
+
+.overview {
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.genresList {
+  margin-top: 10px;
+  &__item {
+    margin-bottom: 5px;
+  }
+}
+
+.additionalInfoThumb {
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 10px 0;
+  border: 2px solid #b00b6842;
+  box-shadow: $box-shadow;
+}
+body.dark .additionalInfoThumb {
+  color: grey;
+}
+
+.additionalText {
+  text-align: center;
+}
+
+.addOnsLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.showAddonLink {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #e2f7ff;
+  color: black;
+  transition: all $transition-duration $transition-function;
+
+  &:hover {
+    background-color: #cab7c3f1;
+    transform: scale(0.98);
+  }
+}
+
+body.dark .showAddonLink {
+  background-color: rgb(115, 134, 134);
+
+  &:hover {
+    background-color: rgb(77, 97, 102);
+  }
+}
